@@ -10,8 +10,8 @@ self.addEventListener('install', e => {
                 '/',
                 '/index.html',
                 '/style.css',
-                '/public/manifest.json',
-                '/public/logo.svg'
+                '/manifest.json',
+                '/logo.svg'
             ]);
         })
     );
