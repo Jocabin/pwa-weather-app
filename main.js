@@ -15,7 +15,7 @@ function updateData(data) {
 
     temperature_p.textContent = Math.floor(data.list[0].main.temp).toString()
     location_span.textContent = data.city.name
-    weather_icon_img.setAttribute('src', `http://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`)
+    weather_icon_img.setAttribute('src', `https://openweathermap.org/img/wn/${data.list[0].weather[0].icon}@2x.png`)
     weather_icon_img.setAttribute('alt', `${data.list[0].weather[0].description}`)
     date_p.textContent = date.toLocaleDateString('fr-FR', {
         weekday: "short",
