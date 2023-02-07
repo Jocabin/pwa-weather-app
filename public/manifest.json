@@ -30,7 +30,7 @@
   ],
   "background_color": "#ffd059",
   "display": "standalone",
-  "scope": "./index.html",
+  "scope": "/",
   "theme_color": "#ffd059",
   "description": "Météo"
 }
