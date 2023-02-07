@@ -1,5 +1,3 @@
-import './style.css'
-
 const search_form = document.getElementById('search-form')
 const searched_city = document.getElementById('search')
 
