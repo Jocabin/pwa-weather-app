@@ -80,6 +80,13 @@
         </label>
     </form>
 </div>
+<script>
+    if ('serviceWorker' in navigator) {
+        addEventListener('load', function () {
+            navigator.serviceWorker.register('/service-worker.js');
+        });
+    }
+</script>
 <script type="module" defer src="/main.js"></script>
 </body>
 </html>

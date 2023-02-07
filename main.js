@@ -1,13 +1,6 @@
 const search_form = document.getElementById('search-form')
 const searched_city = document.getElementById('search')
 
-window.addEventListener('load', () => {
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./service-worker.js');
-    }
-})
-
-
 function updateData(data) {
     const temperature_p = document.querySelector('#temperature > span:first-of-type')
     const location_span = document.querySelector('#location>span')
