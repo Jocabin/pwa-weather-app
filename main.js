@@ -2,7 +2,7 @@ const search_form = document.getElementById('search-form')
 const searched_city = document.getElementById('search')
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./service-worker.js');
+    navigator.serviceWorker.register('service-worker.js');
 }
 
 function updateData(data) {
@@ -11,7 +11,6 @@ function updateData(data) {
     const date_p = document.getElementById('date')
     const weather_icon_img = document.getElementById('weather-icon')
     const date = new Date(data.city.sunrise * 1000)
-    console.log(date)
 
     temperature_p.textContent = Math.floor(data.list[0].main.temp).toString()
     location_span.textContent = data.city.name
