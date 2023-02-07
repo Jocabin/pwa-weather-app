@@ -2,7 +2,7 @@ const search_form = document.getElementById('search-form')
 const searched_city = document.getElementById('search')
 
 if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('./service-worker.js');
+    navigator.serviceWorker.register('/service-worker.js');
 }
 
 function updateData(data) {
