@@ -28,9 +28,9 @@
       "purpose": "maskable"
     }
   ],
-  "background_color": "#ffd059",
+  "background_color": "#101039",
   "display": "standalone",
   "scope": "/",
-  "theme_color": "#ffd059",
-  "description": "Météo"
+  "theme_color": "#101039",
+  "description": "PWA météo"
 }

@@ -46,10 +46,16 @@ function error(err) {
     console.warn(`ERROR(${err.code}): ${err.message}`)
 }
 
-navigator.geolocation.getCurrentPosition(fetch_weather_with_position, error, {
-    enableHighAccuracy: true,
-    maximumAge: 0
-})
+if ("geolocation" in navigator) {
+    navigator.geolocation.getCurrentPosition(fetch_weather_with_position, error, {
+        enableHighAccuracy: true,
+        timeout: 5000,
+        maximumAge: 0
+    })
+} else {
+    fetch_weather_with_city('Bordeaux')
+}
+
 
 search_form.addEventListener("submit", (e) => {
     e.preventDefault()
