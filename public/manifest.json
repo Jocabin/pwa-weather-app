@@ -16,13 +16,13 @@
       "purpose": "maskable"
     },
     {
-      "src": "/icons/android-icon-192x192.maskable.png",
+      "src": "/icons/android-icon-192x192.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/icons/android-icon-512x512.maskable.png",
+      "src": "/icons/android-icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
