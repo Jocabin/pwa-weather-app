@@ -26,7 +26,7 @@ function updateData(data) {
 
 function fetch_weather_with_position(pos) {
     const coords = pos.coords
-    const base_url = 'http://api.openweathermap.org/data/2.5/forecast'
+    const base_url = 'https://api.openweathermap.org/data/2.5/forecast'
 
     fetch(`${base_url}?lang&daily&units=metric&lon=${coords.longitude}&lat=${coords.latitude}&appid=${import.meta.env.VITE_API_KEY}`).then(res => {
         if (res.ok) return res.json()
@@ -36,7 +36,7 @@ function fetch_weather_with_position(pos) {
 }
 
 function fetch_weather_with_city(city) {
-    const base_url = 'http://api.openweathermap.org/data/2.5/forecast'
+    const base_url = 'https://api.openweathermap.org/data/2.5/forecast'
 
     fetch(`${base_url}?lang&daily&units=metric&q=${city}&appid=${import.meta.env.VITE_API_KEY}`).then(res => {
         if (res.ok) return res.json()
