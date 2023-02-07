@@ -59,9 +59,9 @@ button {
 }
 
 .text-input {
+    appearance: none;
     background-color: var(--gray);
     padding: 1rem 1.5rem;
-    border-radius: 1.5rem 0 0 1.5rem;
     width: 100%;
     border: 0;
     outline: 0;
@@ -187,7 +187,7 @@ picture {
 
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: stretch;
     justify-content: center;
     position: relative;
     overflow: hidden;
@@ -195,12 +195,8 @@ picture {
 }
 
 #search-form label:not(.hidden) {
-    width: 3.5rem;
-    height: 51px;
     background-color: var(--gray);
-    padding-right: 1rem;
-    border-radius: 0 1.5rem 1.5rem 0;
-
+    padding: 1rem 1.5rem 1rem 0;
     display: grid;
     place-items: center;
 }
