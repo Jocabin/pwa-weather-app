@@ -2,6 +2,7 @@
   "short_name": "Mais théo",
   "name": "Mais théo",
   "start_url": "/",
+  "id": "/",
   "icons": [
     {
       "src": "/icons/android-icon-192x192.maskable.png",
@@ -16,7 +17,7 @@
       "purpose": "maskable"
     },
     {
-      "src": "/icons/android-icon-192x192.maskable.png",
+      "src": "/icons/android-icon-512x512.maskable.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"

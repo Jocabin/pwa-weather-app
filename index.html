@@ -55,11 +55,11 @@
         </nav>
 
         <ul>
-            <template>
+            <template id="tile-hourly">
                 <li class="rounded-tile">
                     SVG
-                    <span>HEURE</span>
-                    <span>TEMPERATURE</span>
+                    <span class="tile-hour"></span>
+                    <span class="tile-temperature"></span>
                 </li>
             </template>
         </ul>
@@ -68,7 +68,7 @@
     <form method="GET" id="search-form">
         <label for="search" class="hidden">Rechercher</label>
 
-        <input autocomplete="off" required spellcheck="false" class="text-input" placeholder="Bordeaux, 33000"
+        <input autocomplete="off" required spellcheck="false" class="text-input" placeholder="Bordeaux"
                type="search" name="search" id="search">
         <label for="search">
             <button type="submit">

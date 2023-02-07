@@ -46,7 +46,8 @@ function fetch_weather_with_city(city) {
 }
 
 function error(err) {
-    console.warn(`ERROR(${err.code}): ${err.message}`)
+    alert(err.message)
+    fetch_weather_with_city('Bordeaux')
 }
 
 if ("geolocation" in navigator) {
@@ -59,9 +60,8 @@ if ("geolocation" in navigator) {
     fetch_weather_with_city('Bordeaux')
 }
 
-
 search_form.addEventListener("submit", (e) => {
     e.preventDefault()
 
-    fetch_weather_with_city(searched_city.value.replaceAll(' ', '-'))
+    fetch_weather_with_city(searched_city.value.trim())
 })
