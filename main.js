@@ -38,9 +38,11 @@ function fetch_weather_with_city(city) {
     }).then(data => {
         updateData(data)
     }).catch(err => {
-        alert('Cette ville n\'existe pas')
-            console.err(err.message)
+        alert(city + ' : Cette ville n\'existe pas')
+        console.err(err.message)
     })
+
+    searched_city.value = ''
 }
 
 function error(err) {
